@@ -1,0 +1,220 @@
+Mail pprofesor: gustavo.d.lettieri@gmail.com
+
+https://www.python.org/
+https://www.geany.org/Download/Releases
+------------------------------------------------------------------------------
+float
+int
+bool
+string
+
+creo la varable , no hace falta especificar el tipo de datos
+
+a = 1
+print a
+
+a = "hola"
+print a
+
+a = True, False
+
+-------------------------------------------------------------------------------
+
+Comparativos
+== , != , >= , < , >
+
+asignacion
+=
+-------------------------------------------------------------------------------
+
+
+
+type(variable)  -> devuelve tipo de variable
+-------------------------------------------------------------------------------
+se puede hacer operaciones simples sin guardar en variable
+5+6
+-------------------------------------------------------------------------------
+
+% modulo, devuelve el resto de la division
+
+-------------------------------------------------------------------------------
+
+tuplas  a() son no mutables
+	son iguales que las listas 
+
+	a = (3.14,) si es un solo valor
+
+listas  a = [1,2,3,4]  a[0] imprime el valor 1 
+			a[-1] toma el ultimo valor de la lista no importa cuanto crezca
+	b = [3.14,True,"Hola"]
+	las listas tambien se peden anidar
+	b= [a,b,[True,3.15]]
+	b[2][0] trae True
+	a.append(4) agrega un 4 al final de la lista
+	a.insert(ubicacion,valor)
+	del a[0] borra valor de la ubicacion
+	
+	
+diccionarios a={"precio":1,"descripcion":"algo"}
+		a=["precio"] = 3.14 reasigna un valor
+		a=["c"] agrega valor al diccionario
+		del a["c"]
+len(objeto) longuitud del objeto devuelve
+
+unpacking 
+t = (1,2,3)
+a,b,c = t se asigna 1 a a , 2 a b, 3 a c
+
+
+-------------------------------------------------------------------------------
+a = None declaro la variable sin tipo
+a is None , devuelve True
+-------------------------------------------------------------------------------
+>>> nombre = "Andres"
+>>> edad = 34
+>>> mensaje = "Hola mi nombre es {0},tengo {1}
+>>> mensaje
+'Hola mi nombre es {0},tengo {1} a\xa4os.'
+-------------------------------------------------------------------------------
+
+
+>>> "hola mi nombre es %s y tengo %s años." % (nombre,edad)
+'hola mi nombre es Andres y tengo 34 a\xa4os.'
+
+
+
+-------------------------------------------------------------------------------
+
+and True and True
+or
+
+
+Todo lo que esta dentro del if debe estar tabulado o con 4 espacios
+
+edad = 30
+if edad > 18:
+	print "sos mayor"
+else:
+	print "sos menor"
+menor
+
+--------------------------------------------------------------------------------
+
+
+
+>>> a = 1
+>>> b = "hola"
+>>> print b + a
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot concatenate 'str' and 'int' objects
+>>> print b + str(a)
+
+--------------------------------------------------------------------------------
+>>> if edad > 18:
+...     print "sos mayor"
+... elif edad >=65:
+...     print "sos anciano"
+... else:
+...     print "sos menor"
+...
+sos mayor
+--------------------------------------------------------------------------------
+if a:
+pregunto si la variable esta iniciada
+
+---------------------------------------------------------------------------------
+
+>>> while a <= 10:
+...     print a
+...     a+=1
+...
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+>>>
+
+>>> a = [1,2,3,4]
+>>> for i in a:
+...     print i
+...
+1
+2
+3
+4
+>>>
+-------------------------------------------------------------------
+range(desde que valor,cuantos valores)
+------------------------------------------------------------------------------
+for i in range(5): defino que se repita tantas veces quiere, en este caso 5
+
+>>> for i in range(len(nombres)):
+...     nombre = nombres[i]
+...     print i,nombre
+...
+0 Jorge
+1 Gustavo
+2 Andres
+ 
+
+otra forma es esta ->
+
+>>> for i, nombre in enumerate(nombres):
+...     print i,nombre
+...
+0 Jorge
+1 Gustavo
+2 Andres
+>>>
+
+
+------------------------------------------------------------------------------
+def nombrefuncion():   asi defino una funcion
+
+
+>>> def sumar(a,b):
+...     return a+b
+...
+>>> sumar(1,5)
+6
+
+--------------------------------------
+>>> def suma(a,b=5): valor del parametro por defecto
+...     return a + b
+...
+>>> suma(a)
+Traceback (most recent call las
+  File "<stdin>", line 1, in <m
+  File "<stdin>", line 2, in su
+TypeError: can only concatenate
+>>> suma(5)
+10
+>>>
+
+-----------------------comentarios-------------------------------------
+>>> def suma(a,b):
+...     """
+...     retorna a + b
+...     """
+...     return a + b
+...
+>>> help(suma)
+Help on function suma in module __main__:
+
+suma(a, b)
+    retorna a + b
+
+>>>
+
+
+
+
+
+
